@@ -1,0 +1,39 @@
+
+<div>
+	<h1 class="rainbow">Proposing My Love With Seven Colors </h1> 
+
+  <br>
+  <br>
+
+  <h3 class="rainbow"> > Enter Name of Your Crush </h3>
+
+  <input #crush class="inputbox" (input)="CrushName(crush.value)" type="text" placeholder="Crush Name">
+
+  <br>
+  <br>
+
+  <h3 class="rainbow"> > Put Color Name</h3>
+
+	<input #ip class="inputbox" type="text" placeholder="red, orange, yellow, green, blue, indigo, violet">
+
+	<br>
+	<br>
+
+	<button class="ipRainbow" (click)="ColorName(ip.value)">Submit</button>
+</div>
+
+<div [ngSwitch]="colour">
+  <h1 *ngSwitchCase="'red'" style="color: red;">I Love You {{crushName}}</h1>
+
+  <h1 *ngSwitchCase="'orange'" style="color: orange;">I Love You {{crushName}}</h1>
+
+  <h1 *ngSwitchCase="'indigo'" style="color: indigo;">I Love You {{crushName}}</h1>
+
+  <h1 *ngSwitchCase="'yellow'" style="color: yellow;">I Love You {{crushName}}</h1>
+
+  <h1 *ngSwitchCase="'green'" style="color: green;">I Love You {{crushName}}</h1>
+
+  <h1 *ngSwitchCase="'blue'" style="color: blue;">I Love You {{crushName}}</h1>
+
+  <h1 *ngSwitchCase="'violet'" style="color: violet;">I Love You {{crushName}}</h1>
+</div>
